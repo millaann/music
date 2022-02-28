@@ -60,10 +60,7 @@ async def play(c: Client, m: Message):
                 InlineKeyboardButton(text="• التحكم .", callback_data="cbmenu"),
                 InlineKeyboardButton(text="• اغلاق .", callback_data="cls"),
                 ],
-              [InlineKeyboardButton(ALIVE_NAME, url=f"t.me/{OWNER_NAME}"),
-              InlineKeyboardButton("-  𝙎𝙊𝙐𝙍𝘾𝙀 𝙈𝙄𝙇𝘼𝙉 .", url=f"t.me/{UPDATES_CHANNEL}"),
-                ],
-              [InlineKeyboardButton("🎧اضافه البوت اللي مجموعتك🎧", url=f"http://t.me/{BOT_USERNAME}?startgroup=new"),              
+              [InlineKeyboardButton("♪ اضف البوت الي مجموعتك .", url=f"http://t.me/{BOT_USERNAME}?startgroup=new"),              
             ]
         ]
     )
@@ -139,7 +136,7 @@ async def play(c: Client, m: Message):
                 await suhu.delete()
                 await m.reply_photo(
                     photo=f"{IMG_1}",
-                    caption=f"💡 **تمت إضافة المقطع إلى قائمة الانتظار »** `{pos}`\n\n🏷 **الاسم:** [{songname}]({link})\n💭 **المجموعة:** `{chat_id}`\n🎧 **طلب بواسطة:** {m.from_user.mention()}",
+                    caption=f"♪ تمت إضافة المقطع إلى قائمة الانتظار » {pos}\n\n♪ الاسم: [{songname}]({link})\n♪ المجموعة: {chat_id}\n♪ طلب بواسطة: {m.from_user.mention()}",
                     reply_markup=keyboard,
                 )
             else:
@@ -157,7 +154,7 @@ async def play(c: Client, m: Message):
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
                     photo=f"{IMG_2}",
-                    caption=f"💡 **بداء تشغيل الموسيقئ**\n\n🏷 **الاسم:** [{songname}]({link})\n💭 **المجموعة:** `{chat_id}`\n💡 **الحالة:** `شغال`\n🎧 **طلب بواسطة:** {requester}",
+                    caption=f"♪ بداء تشغيل الموسيقئ\n\n♪ الاسم: [{songname}]({link})\n♪ المجموعة: {chat_id}\n♪ الحالة: شغال\n♪ طلب بواسطة: {requester}",
                     reply_markup=keyboard,
                 )
              except Exception as e:
@@ -189,7 +186,7 @@ async def play(c: Client, m: Message):
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
                                 photo=f"{IMG_1}",
-                                caption=f"💡 **تمت إضافة المقطع إلى قائمة الانتظار »** `{pos}`\n\n🏷 **الاسم:** [{songname}]({url})\n💭 **المجموعة:** `{chat_id}`\n🎧 **طلب بواسطة:** {requester}",
+                                caption=f"♪ تمت إضافة المقطع إلى قائمة الانتظار » {pos}\n\n♪ الاسم: [{songname}]({url})\n♪ المجموعة: {chat_id}\n♪ طلب بواسطة: {requester}",
                                 reply_markup=keyboard,
                             )
                         else:
@@ -207,7 +204,7 @@ async def play(c: Client, m: Message):
                                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                                 await m.reply_photo(
                                     photo=f"{IMG_2}",
-                                    caption=f"💡 **بداء تشغيل الموسيقئ**\n\n🏷 **الاسم:** [{songname}]({url})\n💭 **المجموعة:** `{chat_id}`\n💡 **الحالة:** `شغال`\n🎧 **طلب بواسطة:** {requester}",
+                                    caption=f"♪ بداء تشغيل الموسيقئ\n\n♪ الاسم: [{songname}]({url})\n♪ المجموعة: {chat_id}\n♪ الحالة: شغال\n♪ طلب بواسطة: {requester}",
                                     reply_markup=keyboard,
                                 )
                             except Exception as ep:
@@ -240,7 +237,7 @@ async def play(c: Client, m: Message):
                         )
                         await m.reply_photo(
                             photo=f"{IMG_1}",
-                            caption=f"💡 **تمت إضافة المقطع إلى قائمة الانتظار »** `{pos}`\n\n🏷 **الاسم:** [{songname}]({url})\n💭 **المجموعة:** `{chat_id}`\n🎧 **طلب بواسطة:** {requester}",
+                            caption=f"♪ تمت إضافة المقطع إلى قائمة الانتظار » {pos}\n\n♪ الاسم: [{songname}]({url})\n♪ المجموعة: {chat_id}\n♪ طلب بواسطة: {requester}",
                             reply_markup=keyboard,
                         )
                     else:
@@ -258,7 +255,7 @@ async def play(c: Client, m: Message):
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
                                 photo=f"{IMG_2}",
-                                caption=f"💡 **بداء تشغيل الموسيقئ**\n\n🏷 **الاسم:** [{songname}]({url})\n💭 **المجموعة:** `{chat_id}`\n💡 **الحالة:** `شغال`\n🎧 **طلب بواسطة:** {requester}",
+                                caption=f"♪ بداء تشغيل الموسيقئ\n\n♪ الاسم: [{songname}]({url})\n♪ المجموعة: {chat_id}\n♪ الحالة: شغال\n♪ طلب بواسطة: {requester}",
                                 reply_markup=keyboard,
                             )
                         except Exception as ep:
@@ -278,10 +275,7 @@ async def stream(c: Client, m: Message):
                 InlineKeyboardButton(text="• التحكم .", callback_data="cbmenu"),
                 InlineKeyboardButton(text="• اغلاق .", callback_data="cls"),
               ],
-              [InlineKeyboardButton(ALIVE_NAME, url=f"t.me/{OWNER_NAME}"),
-              InlineKeyboardButton("-  𝙎𝙊𝙐𝙍𝘾𝙀 𝙈𝙄𝙇𝘼𝙉 .", url=f"t.me/{UPDATES_CHANNEL}"),
-                ],
-              [InlineKeyboardButton("🎧اضافه البوت اللي مجموعتك🎧", url=f"http://t.me/{BOT_USERNAME}?startgroup=new"),               
+              [InlineKeyboardButton("♪ اضف البوت الي مجموعتك .", url=f"http://t.me/{BOT_USERNAME}?startgroup=new"),               
             ]
         ]
     )
@@ -360,7 +354,7 @@ async def stream(c: Client, m: Message):
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
                     photo=f"{IMG_1}",
-                    caption=f"💡 **تمت إضافة المقطع إلى قائمة الانتظار »** `{pos}`\n\n💭 **المجموعة:** `{chat_id}`\n🎧 **طلب بواسطة:** {requester}",
+                    caption=f"♪ تمت إضافة المقطع إلى قائمة الانتظار » {pos}\n\n♪ المجموعة: {chat_id}\n♪ طلب بواسطة: {requester}",
                     reply_markup=keyboard,
                 )
             else:
@@ -380,7 +374,7 @@ async def stream(c: Client, m: Message):
                     )
                     await m.reply_photo(
                         photo=f"{IMG_2}",
-                        caption=f"💡 **[موسيقئ مباشرة]({link}) بداء التشغيل**\n\n💭 **المجموعة:** `{chat_id}`\n💡 **الحالة:** `شغال`\n🎧 **طلب بواسطة:** {requester}",
+                        caption=f"♪ [موسيقئ مباشرة]({link}) بداء التشغيل\n\n♪ المجموعة: {chat_id}\n♪ الحالة: شغال\n♪ طلب بواسطة: {requester}",
                         reply_markup=keyboard,
                     )
                 except Exception as ep:
